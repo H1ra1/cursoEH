@@ -18,7 +18,8 @@ nav a {
     font-family: 'Libre Franklin', sans-serif;
     /* padding: 0px 10px; */
     text-decoration: none;
-    transition: color 1s;
+    transition: color 0.5s;
+    transition-timing-function: ease-out;
 }
 
 nav a:hover {
@@ -40,7 +41,7 @@ section {
     justify-content: space-evenly;
 }
 
-div {
+section div {
     padding: 20px 0px;
     width: 40%;
 }
@@ -60,8 +61,96 @@ div li {
     background-position: left center;
     background-size: 20px;
     padding-left: 30px;
+    margin-left: -30px;
 }
 
 div h2 {
     color: #093a72;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .cadas {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+footer h3 {
+    color: #eee;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer input::placeholder {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+footer input:hover {
+    font-family: monospace;
+    border: 2px solid orangered;
+}
+
+footer input {
+    padding: 10px;
+    font-family: monospace;
+    font-size: 16px;
+    color: blue;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    width: 300px;
+}
+
+footer input:focus {
+    border: 2px solid orangered;
+    outline: none;
+}
+
+footer button {
+    color: #eee;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+footer button:hover {
+    background-color: blue;
+}
+
+footer button:active {
+    color: orangered;
+    border: none;
+    outline: none;
+    
+}
+
+footer .redes {
+    display: inline-block;
+
+}
+
+footer a img {
+    width: 32px;
+    padding: 10px;
+}
+
+.redes a img:hover {
+    border-bottom: solid 1px orangered;
 }
