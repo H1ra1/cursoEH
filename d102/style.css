@@ -1,13 +1,14 @@
-* {
+body {
     margin: 0;
 }
 
 nav {
     background-color: #f87730;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.6);
     display: flex;
     padding: 15px;
     justify-content: space-evenly;
+    z-index: 100;
 
 }
 
@@ -17,4 +18,50 @@ nav a {
     font-family: 'Libre Franklin', sans-serif;
     /* padding: 0px 10px; */
     text-decoration: none;
+    transition: color 1s;
+}
+
+nav a:hover {
+    color: #eee;
+}
+
+header {
+    background-image: url("images/kages.jpg");
+    background-size: cover;
+    background-position: top;
+    border-bottom: solid 2px #f87730;
+    height: 400px;
+    margin-top: 3px;
+}
+
+section {
+    background-color: #f5efef;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div {
+    padding: 20px 0px;
+    width: 40%;
+}
+
+div p {
+    color: #333;
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+div li {
+    list-style: none;
+    background-image: url("images/iconfinder_kunai-simple_479475.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    padding-left: 30px;
+}
+
+div h2 {
+    color: #093a72;
 }
