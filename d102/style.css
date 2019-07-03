@@ -9,7 +9,7 @@ nav {
     padding: 15px;
     justify-content: space-evenly;
     z-index: 100;
-
+    
 }
 
 nav a {
@@ -73,22 +73,26 @@ footer {
     background-color: #333;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: top;
 }
 
-footer .cadas {
+footer div:nth-child(1) {
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
-
+    
 }
 
 footer h3 {
     color: #eee;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer div:nth-child(2) h3 {
+    padding-top: 30px;
 }
 
 footer input::placeholder {
@@ -141,9 +145,9 @@ footer button:active {
     
 }
 
-footer .redes {
+footer div:nth-child(2) {
     display: inline-block;
-
+    
 }
 
 footer a img {
@@ -151,6 +155,6 @@ footer a img {
     padding: 10px;
 }
 
-.redes a img:hover {
+footer div:nth-child(2) a img:hover {
     border-bottom: solid 1px orangered;
 }
