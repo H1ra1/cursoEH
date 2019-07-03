@@ -1,0 +1,77 @@
+body {
+    display: grid;
+    grid-template-areas: 'nav nav nav nav'
+                         'header header header header'
+                         'section section section section'
+                         'footer footer footer footer';
+                         /* deixar a coluna em branco usar "." */
+    grid-template-rows: 11vh 50vh 60vh 15vh;
+    /* grid-gap => espaçamento entre colunas/linhas */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    background-color: #c97f2a;
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2e1a2e;
+    border-radius: 4px;
+    width: 2px;
+   
+}
+nav {
+    background-image: linear-gradient(#2e1a2e,#1a0e1a);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: nav;
+    border-bottom: 1px solid #c97f2a;
+}
+
+nav div:nth-child(1) img {
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    margin-left: 30px;
+}
+
+nav div:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+nav div:nth-child(2) a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header {
+    background-image: url("imgs/faustao.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+    grid-area: header;
+}
+
+section {
+    background-color: #f38240;
+    grid-area: section;
+    padding: 10px;
+}
+
+section p {
+    text-align: justify;
+    width: 80%;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: purple;
+    grid-area: footer;
+}
