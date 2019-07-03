@@ -5,7 +5,7 @@ body {
                          'section section section section'
                          'footer footer footer footer';
                          /* deixar a coluna em branco usar "." */
-    grid-template-rows: 11vh 50vh 60vh 15vh;
+    grid-template-rows: 11vh 50vh 40vh 15vh;
     /* grid-gap => espaçamento entre colunas/linhas */
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -58,20 +58,28 @@ header {
     grid-area: header;
 }
 
+
 section {
     background-color: #f38240;
     grid-area: section;
-    padding: 10px;
+    padding: 30px;
+    display: flex;
 }
 
 section p {
     text-align: justify;
-    width: 80%;
+    padding: 0px 10px;
     font-size: 18px;
     margin-left: 10px;
+}
+
+section div:nth-child(2) {
+    background-color: purple;
+    width: 900px;
+    height: 200px;
 }
 
 footer {
     background-color: purple;
     grid-area: footer;
-}
+} 
