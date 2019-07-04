@@ -95,6 +95,7 @@ body {
     background-color: #fff;
     grid-area: branco7;
     border: 5px solid #000;
+    border-bottom: none;
 }
 .blue2 {
     background-color: #000099;
@@ -128,6 +129,7 @@ body {
     background-color: #fff;
     grid-area: branco11;
     border: 5px solid #000;
+    border-top: none;
 }
 .red3 {
     background-color: #990000;
