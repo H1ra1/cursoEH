@@ -91,7 +91,7 @@ button {
     border: none;
     cursor: pointer;
     outline: none;
-    transition: 0.5s;
+    transition: 0.2s;
     font-weight: bold;
 }
 
@@ -218,6 +218,64 @@ footer {
     text-align: right;
 }
 
+.aroundBlack {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-in-out;
+    
+}
+
+.navM {
+    background-color: rgb(29, 29, 29);
+    width: 0px;
+    height: 100vh   ;
+    position: absolute;
+    right: 0;
+    box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.navMB {
+    width: 500px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.nmNone {
+    display: none;
+}
+
+
+.nm {
+    display: flex;
+    flex-direction: column;
+}
+
+.nm ul {
+    display: block;
+}
+
+.nm li {
+    padding: 10px 0px;
+}
+
+.nm a{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.divider2 {
+    height: 2px;
+    width: 20px;
+    background-color: #eee;
+}
+
+
+/* .row rows */
+
 @media(max-width: 1100px) {
 
     header {
@@ -263,7 +321,13 @@ footer {
     }
 }
 
-/* .row rows */
-@media(max-width: 700px) {
+@media(min-width: 1000px) {
+    .navM {
+        display: none;
+    }
 
+    .nm {
+        display: none;
+    }
 }
+

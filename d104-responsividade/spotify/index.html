@@ -22,8 +22,25 @@
                 <li><a href="#">Entrar</a></li>
             </ul>
         </nav>
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars btn"></i>
     </header>
+
+        <div class="empt"></div>
+
+        <div class="navM">
+            <nav class="nmNone">
+                <ul>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Baixar</a></li>
+                    <li><div class="divider2"></div></li>
+                    <li><a href="#">Inscreva-se</a></li>
+                    <li><a href="#">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    </div>
     <section>
         <h1>Música para todos.</h1>
         <h3>Milhões de músicas à sua escolha. E nem precisa de cartão de crédito.</h3>
@@ -52,11 +69,11 @@
                     </ul>
                 </div>
                 <div class="links configFooter">
-                        <span class="title">LINKS ÚTEIS</span>
-                        <ul class="footerUl">
-                            <li>Ajuda</li>
-                            <li>Player da Web</li>
-                        </ul>
+                    <span class="title">LINKS ÚTEIS</span>
+                    <ul class="footerUl">
+                        <li>Ajuda</li>
+                        <li>Player da Web</li>
+                    </ul>
                 </div>
                 <div class="social">
                     <div class="insta"><i class="fab fa-instagram"></i></div>
@@ -65,21 +82,33 @@
                 </div>
             </nav>
         </div>
-            <nav class="smallRow">
-                <div class="legal">
-                    <ul class="navSmall">
-                        <li>Legal</li>
-                        <li>Centro de Privacidade</li>
-                        <li>Política de Privacidade</li>
-                        <li>Cookies</li>
-                        <li>Sobre anúncios</li>
-                    </ul>
-                </div>
-                <div class="copy">
-                    <p>Brasil</p>
-                    <p>© 2019 Spotify AB</p>
-                </div>
-            </nav>
+        <nav class="smallRow">
+            <div class="legal">
+                <ul class="navSmall">
+                    <li>Legal</li>
+                    <li>Centro de Privacidade</li>
+                    <li>Política de Privacidade</li>
+                    <li>Cookies</li>
+                    <li>Sobre anúncios</li>
+                </ul>
+            </div>
+            <div class="copy">
+                <p>Brasil</p>
+                <p>© 2019 Spotify AB</p>
+            </div>
+        </nav>
     </footer>
+    
+    <script>
+        const btn = document.querySelector('.btn');
+        const navM = document.querySelector('.navM');
+        const nm = document.querySelector('.nmNone');
+        const around = document.querySelector('.empt');
+        btn.onclick = () => {
+            navM.classList.toggle("navMB");
+            nm.classList.toggle("nm");
+            around.classList.toggle("aroundBlack");
+        };
+    </script>
 </body>
 </html>

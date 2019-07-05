@@ -218,4 +218,8 @@ footer div a:hover {
     .player {
         display: none;
     }
+
+    .banner > div {
+        width: 300px;
+    }
 }
