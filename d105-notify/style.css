@@ -58,3 +58,31 @@ div > h1 {
     padding: 10px;
     border-radius: 50px;
 }
+
+/* section colunas */
+
+.colunas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colunas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.colunas div img {
+    background-color: rgb(83, 198, 94);
+    width: 40px;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+
+.colunas div p {
+    font-size: 15px;
+    color: grey;
+
+}
