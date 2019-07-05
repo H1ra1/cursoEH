@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.banner {
+    background-image: url("imgs/banner.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    border-top: 10px solid rgb(83, 198, 94);
+}
+
+.banner > div {
+    width: 400px;
+}
+
+.banner h1 span{
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: rgb(83, 198, 94);
+    border-radius: 100%;
+    position: absolute;
+    top: 44px;
+    left: 135px;
+}
+
+div > h1 {
+    font-family: 'Pacifico';
+    font-size: 48px;
+    position: relative;
+    margin-top: 0; 
+}
+
+.banner p{
+    font-size: 20px;
+    color: #fff;
+}
