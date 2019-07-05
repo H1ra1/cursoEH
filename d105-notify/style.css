@@ -6,10 +6,12 @@ body {
 .banner {
     background-image: url("imgs/banner.png");
     background-size: cover;
+    color: #fff;
     display: flex;
     justify-content: space-around;
     justify-items: center;
     border-top: 10px solid rgb(83, 198, 94);
+    padding: 150px 130px 0px 130px;
 }
 
 .banner > div {
@@ -27,6 +29,11 @@ body {
     left: 135px;
 }
 
+.banner > img {
+    width: 350px;
+    display: block;
+}
+
 div > h1 {
     font-family: 'Pacifico';
     font-size: 48px;
@@ -37,4 +44,17 @@ div > h1 {
 .banner p{
     font-size: 20px;
     color: #fff;
+}
+
+@media (min-witdh: 1024px) {
+.banner {
+        padding: 0px 200px;
+        height: 38vh;
+    }
+}
+
+.icones > img {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50px;
 }
