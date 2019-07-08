@@ -278,7 +278,8 @@ div nav a:hover {
         width: 300px;
     }
     .fotinhas > div {
-        width: 35%;
+        
+        display: contents;
     }
 
     .imgs {
@@ -307,5 +308,23 @@ div nav a:hover {
         justify-content: center;
         align-items: center;
         
+    }
+}
+
+@media(max-width: 780px) {
+    footer div ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .icones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icones a {
+        margin-bottom: 10px;
     }
 }
