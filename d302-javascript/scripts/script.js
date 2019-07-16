@@ -21,6 +21,12 @@ let cards = document.querySelectorAll('.card');
 
 images = shuffle(images);
 
-for(let i in cards) {
+for(let i = 0; i < cards.length; i++) {
     cards[i].style.backgroundImage = `url('imgs/${images[i]}')`;
 }
+
+setTimeout(function() {
+    for(card of cards) {
+        card.style.background = 'red';
+    }
+}, 3000)
