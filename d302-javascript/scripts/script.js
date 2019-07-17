@@ -28,11 +28,11 @@ for(let i = 0; i < cards.length; i++) {
 }
 
 setTimeout(() => {
-    for(card of cards) {
-        card.style.background = 'red';
-        console.log(card.id)
-        card.onclick = () => {
-            console.log(card.id)
+    for(let i = 0; i < cards.length; i++) {
+        cards[i].style.backgroundImage = 'url("imgs/n1.jpg")';
+        console.log(cards[i].id)
+        cards[i].onclick = () => {
+            cards[i].style.backgroundImage = `url('imgs/${images[Number(cards[i].id)]}')`
         }
     }
 }, 3000)
