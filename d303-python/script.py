@@ -41,25 +41,29 @@ from random import randint
 
 # EMBARALHAR ==>
 
-arr = [1, 2, 3, 4, 6, 7, 8]
+# arr = [1, 2, 3, 4, 6, 7, 8]
 
-def embaralhar(lista):
-    indice_atual = len(lista)
-    valor_temporario = None
-    indice_aleatorio = None
-    count = 0
+# def embaralhar(lista):
+#     indice_atual = len(lista)
+#     valor_temporario = None
+#     indice_aleatorio = None
+#     count = 0
 
-    while count != indice_atual:
-        indice_aleatorio = randint(0, indice_atual)
-        indice_atual -= 1
+#     while count != indice_atual:
+#         indice_aleatorio = randint(0, indice_atual)
+#         indice_atual -= 1
 
-        valor_temporario = lista[indice_atual]
-        lista[indice_atual] = lista[indice_aleatorio]
-        lista[indice_aleatorio] = valor_temporario
+#         valor_temporario = lista[indice_atual]
+#         lista[indice_atual] = lista[indice_aleatorio]
+#         lista[indice_aleatorio] = valor_temporario
 
-    return print(lista)
+#     return print(lista)
 
-embaralhar(arr)
+# embaralhar(arr)
+
+# FUNCOES QUADRILHA ==>
+
+
 
 
 
