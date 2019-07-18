@@ -63,36 +63,49 @@ from random import randint
 
 # FUNCOES QUADRILHA ==>
 
-meninos = ['jotinha', 'JonyBoy', 'Zézinho', 'Seucuca', 'Faustinho', 'Jorgin']
-meninas = ['Nina', 'Felipinha', 'Fabi', 'Nica', 'Juriscreuza', 'Betina', 'Padawana', 'Judite']
+# meninos = ['jotinha', 'JonyBoy', 'Zézinho', 'Seucuca', 'Faustinho', 'Jorgin']
+# meninas = ['Nina', 'Felipinha', 'Fabi', 'Nica', 'Juriscreuza', 'Betina', 'Padawana', 'Judite']
 
-def casais(lis1, lis2):
-    if len(lis1) > len(lis2):
-        lista = lis2
-        lista_maior = lis1
-        indice = len(lis2) -1
-        stop = len(lis1) - len(lis2)
+# def casais(lis1, lis2):
+#     if len(lis1) > len(lis2):
+#         lista = lis2
+#         lista_maior = lis1
+#         indice = len(lis2) -1
+#         stop = len(lis1) - len(lis2)
         
-    else:
-        lista = lis1
-        lista_maior = lis2
-        indice = len(lis1) - 1
-        stop = len(lis2) - len(lis1)
+#     else:
+#         lista = lis1
+#         lista_maior = lis2
+#         indice = len(lis1) - 1
+#         stop = len(lis2) - len(lis1)
 
-    for i in range(len(lista)):
-        casais = f'Casal {i + 1} -> {lis1[i]} e {lis2[i]}'
-        print(casais)
-    count = 0
-    while count < stop:
-        indice += 1
-        print(f'Sem par -> {lista_maior[indice]}')
-        count += 1
+#     for i in range(len(lista)):
+#         casais = f'Casal {i + 1} -> {lis1[i]} e {lis2[i]}'
+#         print(casais)
+#     count = 0
+#     while count < stop:
+#         indice += 1
+#         print(f'Sem par -> {lista_maior[indice]}')
+#         count += 1
         
 
 
-casais(meninos, meninas)
+# casais(meninos, meninas)
 
+# IGUAIS ==>
 
+iguais = ['a', 'a', 'a', 'a']
+diferentes = ['a', 'a', 'b', 'a']
+
+def todos_iguais(lista):
+    for i in range(1, len(lista)):
+        if lista[i] != lista[i-1]:
+            return False
+        else:
+            return True
+
+print(todos_iguais(iguais))
+print(todos_iguais(diferentes))
 
 
 
