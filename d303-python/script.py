@@ -30,7 +30,7 @@ from random import randint
 
 # if nome == '':
 #     print('Preencha o campo nome')
-# elif idade <= 25 and idade >= 55:
+# elif idade < 21 or idade > 55:
 #         print('Idade não aceita')
 # elif salario <= 1000:
 #         print('salario abaixo do desejado')
