@@ -5,3 +5,4 @@ proj/db.sqlite3
 myproj/myapp/__pycache__
 myproj/myproj/__pycache__
 myproj/db.sqlite3
+myproj/myapp/migrations/__pycache__
