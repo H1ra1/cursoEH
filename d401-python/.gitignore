@@ -1,4 +1,7 @@
 env
-proj/__pycache__
-home/__pycache__
+proj/home/__pycache__
+proj/proj/__pycache__
 proj/db.sqlite3
+myproj/myapp/__pycache__
+myproj/myproj/__pycache__
+myproj/db.sqlite3
