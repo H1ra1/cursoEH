@@ -1,0 +1,13 @@
+<h1>Pessoas:</h1>
+
+<div>
+    {% if tamanho > 0 %}
+        {% for  pessoa in dados%}
+        <p>Nome: {{pessoa.nome}}</p>
+        <p>CPF: {{pessoa.cpf}}</p>
+        <hr>
+        {% endfor %}
+    {% else %}
+        <h2>Nenhum usuário cadastrado</h2>
+    {% endif %}
+</div>
