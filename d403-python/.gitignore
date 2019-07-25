@@ -2,4 +2,6 @@ env
 proj/db.sqlite3
 proj/app/__pycache__
 proj/proj/__pycache__
+proj/app/migrations/__pycache__´
+proj/.vscode
 proj/app/migrations/__pycache__
