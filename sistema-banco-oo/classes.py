@@ -1,5 +1,4 @@
 from random import randint
-import json
 
 class Cliente:
     def __init__(self, nome, idade, cpf):
@@ -10,29 +9,22 @@ class Cliente:
 class Conta:
     def __init__(self, cliente):
         self.titular = cliente
-        self.numero = self.gerar()
-        self.saldo = 0
+        self.numero = self._gerar()
+        self._saldo = 0
 
     def extrato(self):
-        print(f'Numero: {self.numero}\nSaldo: {self.saldo}')
+        print(f'Numero: {self.numero}\nSaldo: {self._saldo}')
 
     def depositar(self, valor):
-        self.saldo += valor
+        self._saldo += valor
 
     def sacar(self, valor):
-        if(self.saldo < valor):
+        if(self._saldo < valor):
             return False
         else:
-            self.saldo -= valor
+            self._saldo -= valor
 
-    def transferir(self, conta, valor):
-        retirar = self.sacar(valor)
-        if(retirar == False):
-            return False
-        else:
-            conta.depositar(valor)
-
-    def gerar(self):
+    def _gerar(self):
         self.random_num = f'{randint(1000, 9999)}-{randint(1, 9)}'
         return self.random_num
 
