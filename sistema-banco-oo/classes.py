@@ -1,9 +1,8 @@
 from random import randint
 
 class Cliente:
-    def __init__(self, nome, idade, cpf):
+    def __init__(self, nome, cpf):
         self.nome = nome
-        self.idade = idade
         self.cpf = cpf
 
 class Conta:
@@ -27,5 +26,8 @@ class Conta:
     def _gerar(self):
         self.random_num = f'{randint(1000, 9999)}-{randint(1, 9)}'
         return self.random_num
+
+    def exibir_saldo(self):
+        return str(self._saldo)
 
 
