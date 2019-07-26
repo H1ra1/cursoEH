@@ -1,5 +1,6 @@
 from django.contrib import admin
-from app.models import Pessoa
+from . import models
 
 # Register your models here.
-admin.site.register(Pessoa)
+admin.site.register(models.Pessoa)
+admin.site.register(models.Conta)

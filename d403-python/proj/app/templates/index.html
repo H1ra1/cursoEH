@@ -7,11 +7,21 @@
     <title>Cadastrar</title>
 </head>
 <body>
-    <form method="POST">
+    {{msg}}
+    <form method="POST" action="/">
         {% csrf_token %}
         <input type="text" name="nome" placeholder="Nome">
-        <input type="text" name="cpf" placeholder="Cpf">
-        <button>Cadastrar</button>
+        <input type="text" name="cpf" placeholder="CPF">
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="tel" name="telefone" placeholder="Telefone">
+        <label for="genero">Genero: </label>
+        <select name="genero">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+            <option value="M">Outros</option>
+        </select>
+
+        <input type="submit" value="Cadastrar">
     </form>
 </body>
 </html>
